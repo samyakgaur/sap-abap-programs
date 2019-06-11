@@ -1,2 +1,3 @@
-# sap-abap-programs
-This repo contains all the programs to learn abap 
+# SAP ABAP 
+
+This repository will contain all the programs / operations i will conduct on my sap dev server 
