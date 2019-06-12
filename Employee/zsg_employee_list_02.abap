@@ -24,8 +24,14 @@ DATA packed_decimal02 TYPE p DECIMALS 2.
 DATA packed_decimal03 LIKE packed_decimal01.
 
 *declaring fields same as the tables field
-DATA new_surname LIKE zsg_employees-surname.
+DATA new_surname LIKE zsg_employee-surname.
 
 *declaring constants
 CONSTANTS packed_decimal04 TYPE p DECIMALS 1 VALUE '1.0'.
 
+*peforming basic calculations is like any other programming languages [ '+' '-' '/' '*' are the symbols ]
+DATA result LIKE packed_decimal04.
+
+result = integer01 + packed_decimal04.
+
+WRITE result.
