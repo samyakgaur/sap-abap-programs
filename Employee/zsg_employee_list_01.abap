@@ -22,3 +22,12 @@ SELECT * FROM zsg_employee.
   WRITE / zsg_employee-surname.                                "if we want to write particular fields 
   skip 2.
 ENDSELECT.
+
+*using chaining statements to write many lines using one write command
+
+ULINE.
+
+SELECT * FROM zsg_employee.                                    "chain statements
+  WRITE: / zsg_employee-first_name,
+           zsg_employee-surname.
+ENDSELECT.
